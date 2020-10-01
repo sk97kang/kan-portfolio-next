@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 import styled, { css } from "styled-components";
 
@@ -65,7 +65,7 @@ const Item = styled.li`
 const Link = styled.a`
   transition: 0.5s;
   position: relative;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.dark};
 
   &:hover {
     color: ${({ theme }) => theme.colors.first};
@@ -82,6 +82,7 @@ const Link = styled.a`
 
 const Logo = styled.a`
   color: ${({ theme }) => theme.colors.white};
+  font-size: 20px;
 `;
 
 const Toggle = styled.div`
@@ -105,7 +106,7 @@ function Header() {
     <Container>
       <Nav>
         <div>
-          <Logo href="#">Jhon Doe</Logo>
+          <Logo href="#">강성규</Logo>
         </div>
 
         <Menu show={showMenu}>

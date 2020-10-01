@@ -2,7 +2,7 @@ import React from "react";
 import Section from "./Section";
 
 import styled from "styled-components";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 const Container = styled.div`
   ${commonStyle.grid}
@@ -12,7 +12,7 @@ const Container = styled.div`
   text-align: center;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     text-align: initial;
     padding: 4rem 0;
@@ -25,12 +25,13 @@ const Img = styled.div`
   padding-top: 1rem;
   width: 120px;
   height: 120px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #9d8883;
   border-radius: 50%;
   overflow: hidden;
 
   & img {
     width: 100px;
+    border-radius: 50%;
   }
 
   @media (min-width: 768px) {
@@ -74,14 +75,19 @@ function About() {
     <Section id="about" title="About">
       <Container>
         <Img>
-          <img src="./img/perfil.png" alt="" />
+          <img src="./img/profile.png" alt="" />
         </Img>
 
         <div>
-          <Subtitle>강성규 입니다.</Subtitle>
-          <Profession>Front End Developer</Profession>
+          <Subtitle>꾸준한 개발자 강성규 입니다.</Subtitle>
+          <Profession>FrontEnd Developer</Profession>
           <Text>
-            안녕하세요. 강성규 입니다. 프론트 엔드 주니어 개발자 입니다.
+            20살때부터 생각만하던걸 구현할 수 있는 프로그램의 매력에 빠져 독학을
+            시작하였습니다. 알고리즘, 자료구조, CS 공부 등 프로그램 베이스
+            공부를 시작으로 최근에 React를 접하게되어 React, React Native를
+            이용해서 웹/앱을 만들어보고있습니다. 현재는 부족한 부분이 많지만
+            꾸준히 공부하여 차근 차근 기초부터 실력을 올리는 꾸준한 개발자가
+            되고싶습니다.
           </Text>
 
           <Social>

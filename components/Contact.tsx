@@ -2,15 +2,16 @@ import React from "react";
 import Section from "./Section";
 
 import styled from "styled-components";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 const Container = styled.div`
   ${commonStyle.grid}
 
-  row-gap: 2rem;
+  /* row-gap: 2rem; */
+  justify-items: center;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     justify-items: center;
   }
 `;
@@ -87,7 +88,7 @@ function Contact() {
           <Text>서울시 구로구</Text>
         </ContactInfo>
 
-        <Form>
+        {/* <Form>
           <Inputs>
             <Input type="text" placeholder="Name" />
             <Input type="mail" placeholder="Email" />
@@ -96,7 +97,7 @@ function Contact() {
           <Textarea name="" id=""></Textarea>
 
           <Button type="submit" value="Enviar" />
-        </Form>
+        </Form> */}
       </Container>
     </Section>
   );

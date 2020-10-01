@@ -13,7 +13,7 @@ import {
 } from "react-icons/si";
 
 import styled from "styled-components";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 const Container = styled.div`
   ${commonStyle.grid}

@@ -2,19 +2,12 @@ import React from "react";
 import Section from "./Section";
 
 import styled from "styled-components";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 const Container = styled.div`
   ${commonStyle.grid}
 
   height: calc(100vh - ${({ theme }) => theme.height.header});
-  row-gap: 5rem;
-
-  @media (min-width: 768px) {
-    height: 100vh;
-    grid-template-rows: 1.7fr 1fr;
-    row-gap: 0;
-  }
 `;
 
 const Title = styled.h1`
@@ -58,9 +51,11 @@ function Home() {
     <Section id="home">
       <Container>
         <Title>
-          <span>안녕</span>
+          <span>안녕하세요</span>
           <br />
-          하세요.
+          <span>프론트엔드 개발자</span>
+          <br />
+          <span>강성규 입니다.</span>
         </Title>
 
         <Scroll>
@@ -69,7 +64,7 @@ function Home() {
           </ScrollLink>
         </Scroll>
 
-        <Img src="./img/perfil.png" alt="avatar" />
+        {/* <Img src="./img/perfil.png" alt="avatar" /> */}
       </Container>
     </Section>
   );

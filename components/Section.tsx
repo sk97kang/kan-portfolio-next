@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 
 import styled, { css } from "styled-components";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 const Container = styled.section<{ styleName: string }>`
   ${commonStyle.section}
@@ -10,8 +10,10 @@ const Container = styled.section<{ styleName: string }>`
     if (styleName === "home") {
       return css`
         position: relative;
-        background-color: ${({ theme }) => theme.colors.black};
         overflow: hidden;
+        background: url("./img/home_bg.jpg");
+        background-size: cover;
+        background-position: center center;
       `;
     } else if (styleName === "portfolio") {
       return css`

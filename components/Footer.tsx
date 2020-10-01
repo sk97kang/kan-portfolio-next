@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-import commonStyle from "../styles/CommonStyle";
+import commonStyle from "../styles/commonStyle";
 
 const FooterContainer = styled.footer`
   ${commonStyle.section}
@@ -47,9 +47,9 @@ function Footer() {
     <FooterContainer>
       <Container>
         <div className="footer__data">
-          <Title>JHON DOE</Title>
+          <Title>강성규</Title>
           <p className="footer__text">
-            I'm Jhon Doe and this is my personal website
+            I'm FrontEnd Developer 강성규 and this is my website
           </p>
         </div>
 
@@ -76,7 +76,7 @@ function Footer() {
 
         <div className="footer__data">
           <Title>FOLLOW</Title>
-          <Social href="#">
+          {/* <Social href="#">
             <i className="bx bxl-facebook"></i>
           </Social>
           <Social href="#">
@@ -84,6 +84,9 @@ function Footer() {
           </Social>
           <Social href="#">
             <i className="bx bxl-twitter"></i>
+          </Social> */}
+          <Social href="https://github.com/sk97kang" target="_blank">
+            <i className="bx bxl-github"></i>
           </Social>
         </div>
       </Container>

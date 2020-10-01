@@ -41,7 +41,7 @@ const colors = {
 };
 
 const fontSizes = {
-  big: "6.25rem",
+  big: "3.25rem",
   h2: "1.25rem",
   normal: "0.938rem",
   small: "0.813rem",
@@ -75,7 +75,7 @@ const theme: DefaultTheme = {
 const responsiveTheme: DefaultTheme = {
   colors,
   fontSizes: {
-    big: "10.5rem",
+    big: "4.5rem",
     h2: "2rem",
     normal: "1rem",
     small: "0.875rem",
