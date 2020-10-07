@@ -26,52 +26,52 @@ const Text = styled.span`
   margin-bottom: ${({ theme }) => theme.margins.mb2};
 `;
 
-const Inputs = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1rem;
-`;
-
-const Input = styled.input`
-  width: 100%;
-  padding: 0.8rem;
-  outline: none;
-  border: 1.5px solid ${({ theme }) => theme.colors.dark};
-  font-size: ${({ theme }) => theme.fontSizes.normal};
-  margin-bottom: ${({ theme }) => theme.margins.mb4};
-  border-radius: 0.5rem;
-`;
-
-const Textarea = styled.textarea`
-  width: 100%;
-  padding: 0.8rem;
-  outline: none;
-  border: 1.5px solid ${({ theme }) => theme.colors.dark};
-  font-size: ${({ theme }) => theme.fontSizes.normal};
-  margin-bottom: ${({ theme }) => theme.margins.mb4};
-  border-radius: 0.5rem;
-`;
-
-const Button = styled.input`
-  display: block;
-  background-color: ${({ theme }) => theme.colors.first};
-  color: ${({ theme }) => theme.colors.white};
-  padding: 0.75rem 2.5rem;
-  margin-left: auto;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  font-size: ${({ theme }) => theme.fontSizes.normal};
-  cursor: pointer;
-`;
-
 const ContactInfo = styled.div``;
 
-const Form = styled.form`
-  @media (min-width: 768px) {
-    width: 380px;
-  }
-`;
+// const Inputs = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   column-gap: 1rem;
+// `;
+
+// const Input = styled.input`
+//   width: 100%;
+//   padding: 0.8rem;
+//   outline: none;
+//   border: 1.5px solid ${({ theme }) => theme.colors.dark};
+//   font-size: ${({ theme }) => theme.fontSizes.normal};
+//   margin-bottom: ${({ theme }) => theme.margins.mb4};
+//   border-radius: 0.5rem;
+// `;
+
+// const Textarea = styled.textarea`
+//   width: 100%;
+//   padding: 0.8rem;
+//   outline: none;
+//   border: 1.5px solid ${({ theme }) => theme.colors.dark};
+//   font-size: ${({ theme }) => theme.fontSizes.normal};
+//   margin-bottom: ${({ theme }) => theme.margins.mb4};
+//   border-radius: 0.5rem;
+// `;
+
+// const Button = styled.input`
+//   display: block;
+//   background-color: ${({ theme }) => theme.colors.first};
+//   color: ${({ theme }) => theme.colors.white};
+//   padding: 0.75rem 2.5rem;
+//   margin-left: auto;
+//   border-radius: 0.5rem;
+//   border: none;
+//   outline: none;
+//   font-size: ${({ theme }) => theme.fontSizes.normal};
+//   cursor: pointer;
+// `;
+
+// const Form = styled.form`
+//   @media (min-width: 768px) {
+//     width: 380px;
+//   }
+// `;
 
 function Contact() {
   return (
