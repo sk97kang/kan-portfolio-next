@@ -34,18 +34,6 @@ const Scroll = styled.div`
 
 const ScrollLink = styled.a``;
 
-const Img = styled.img`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
-
-  @media (min-width: 768px) {
-    width: 524px;
-    right: 10%;
-  }
-`;
-
 function Home() {
   return (
     <Section id="home">
@@ -63,8 +51,6 @@ function Home() {
             <i className="bx bx-up-arrow-alt"></i>Scroll down
           </ScrollLink>
         </Scroll>
-
-        {/* <Img src="./img/perfil.png" alt="avatar" /> */}
       </Container>
     </Section>
   );

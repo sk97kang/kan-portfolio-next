@@ -44,15 +44,15 @@ const Name = styled.span`
     background-color: ${({ theme }) => theme.colors.first};
     color: ${({ theme }) => theme.colors.white};
   }
-`;
 
-const Img = styled.div`
-  & img {
-    border-radius: 0.5rem;
+  & svg {
+    margin-right: 5px;
   }
 `;
 
-const Box = styled.div``;
+const Box = styled.div`
+  align-self: flex-start;
+`;
 
 function Skills() {
   return (
@@ -61,7 +61,8 @@ function Skills() {
         <Box>
           <Subtitle>Front End</Subtitle>
           <Name>
-            <SiHtml5 /> HTML
+            <SiHtml5 />
+            HTML
           </Name>
           <Name>
             <SiCss3 />
@@ -83,8 +84,12 @@ function Skills() {
             <SiReact />
             React Native
           </Name>
-          <Name>Next.js</Name>
-
+          <Name>
+            <SiReact />
+            Next.js
+          </Name>
+        </Box>
+        <Box>
           <Subtitle>BackEnd</Subtitle>
           <Name>
             <SiSpring />
@@ -103,10 +108,6 @@ function Skills() {
             Firebase
           </Name>
         </Box>
-
-        <Img>
-          <img src="./img/skill.jpg" alt="" />
-        </Img>
       </Container>
     </Section>
   );

@@ -68,7 +68,7 @@ function Portfolio() {
     <Section id="portfolio" title="Portfolio">
       <Container>
         <Img>
-          <img src="./img/portfolio-1.png" alt="" />
+          <img src="./img/movie_home.png" alt="" />
           <Link>
             <LinkTtile>KAN'S MOVIE</LinkTtile>
             <LinkDescription>React + TypeScript</LinkDescription>
@@ -84,7 +84,23 @@ function Portfolio() {
           </Link>
         </Img>
         <Img>
-          <img src="./img/portfolio-2.png" alt="" />
+          <img src="./img/wed_home.png" alt="" />
+          <Link>
+            <LinkTtile>We Developer</LinkTtile>
+            <LinkDescription>React + TypeScript + Next</LinkDescription>
+            <LinkName href="https://wedeveloper.netlify.app/" target="_blank">
+              Go to Web site
+            </LinkName>
+            <LinkName
+              href="https://github.com/sk97kang/we-developer-next"
+              target="_blank"
+            >
+              <i className="bx bxl-github"></i> Go to Github
+            </LinkName>
+          </Link>
+        </Img>
+        <Img>
+          <img src="./img/note_home.png" alt="" />
           <Link>
             <LinkTtile>KAN'S NOTE</LinkTtile>
             <LinkDescription>React + TypeScript</LinkDescription>
@@ -100,7 +116,7 @@ function Portfolio() {
           </Link>
         </Img>
         <Img>
-          <img src="./img/portfolio-3.png" alt="" />
+          <img src="./img/themovie_home.png" alt="" />
           <Link>
             <LinkTtile>THE MOVIE</LinkTtile>
             <LinkDescription>React + Next + TypeScript</LinkDescription>

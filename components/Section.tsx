@@ -11,7 +11,11 @@ const Container = styled.section<{ styleName: string }>`
       return css`
         position: relative;
         overflow: hidden;
-        background: url("./img/home_bg.jpg");
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("./img/home_bg.jpg");
         background-size: cover;
         background-position: center center;
       `;
